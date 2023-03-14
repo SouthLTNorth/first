@@ -414,3 +414,14 @@ arr.sort(unstableSorting)
 
 # Generator 构造函数
 > [0,1,1,2,3,5,8,13,21...]
+```
+var n = 20, r = [];
+for (let i = 1; i < n; i++) {
+	if(i == 1 && i == 2) {
+		r.push(1);
+	} else {
+		r.push(r[r.length - 1] + r[r.length - 2]);
+	}
+}
+console.log(r.join(','));
+```
